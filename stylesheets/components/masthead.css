@@ -1,1 +1,92 @@
 /* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 'menu-and-search . actions'
+    '. technologies .'
+    'date logo paper';
+}
+
+.masthead__menu-and-search {
+    display: flex;
+    align-items: center;
+    grid-area: menu-and-search;
+    height: 70px;
+    padding-left: 20px;
+}
+
+.masthead__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: actions;
+}
+
+.masthead__technologies {
+    display: flex;
+    justify-content: center;
+    grid-area: technologies;
+}
+
+.masthead__logo {
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+    padding: 20px 0 11px;
+}
+
+.masthead__date {
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    grid-area: date;
+    line-height: 11px;
+    padding-bottom: 11px;
+}
+
+.masthead__paper {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    grid-area: paper;
+    justify-content: flex-end;
+    padding-bottom: 11px;
+}
+
+.icon {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.icon:hover {
+    background-color: #f7f7f5;
+}
+
+.tech-container span {
+    text-transform: uppercase;
+    color: #6f6f6f;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.tech-container span:last-child {
+    margin-right: 10px;
+}
+
+.tech-container {
+    background-color: #fff;
+    border-top: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1px;
+}
