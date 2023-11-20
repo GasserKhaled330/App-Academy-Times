@@ -63,6 +63,7 @@
 .icon {
     font-size: 11px;
     padding: 7px 9px;
+    cursor: pointer;
 }
 
 .icon:hover {
