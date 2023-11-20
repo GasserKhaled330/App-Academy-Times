@@ -203,3 +203,18 @@ main {
     margin-bottom: 5px;
 }
 
+@media screen and (max-width: 1200px){
+    .article-sidebar{
+        display: none;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .sub-articles {
+        border-bottom: none;
+    }
+    .main-article {
+        border-right: none;
+    }
+}
