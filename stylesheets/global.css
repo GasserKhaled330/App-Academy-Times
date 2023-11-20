@@ -27,3 +27,20 @@ main {
   max-width: 1400px;
   padding: 0 40px;
 }
+
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  color: dodgerblue;
+  cursor: pointer;
+  transition: color .5s ease-in-out;
+}
+
+footer a:hover {
+  color: #1111d3;
+}
